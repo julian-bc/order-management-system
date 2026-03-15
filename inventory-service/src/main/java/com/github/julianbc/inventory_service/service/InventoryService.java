@@ -16,7 +16,7 @@ public class InventoryService {
 
     @Transactional(readOnly = true)
     public List<InventoryResponse> isInStock(List<String> codeSkuList) {
-        return repository.findByCodeSku(codeSkuList).stream()
+        return repository.findByCodeSkuIn(codeSkuList).stream()
                 .map(inventory -> InventoryResponse.builder()
                         .codeSku(inventory.getCodeSku())
                         .inStock(inventory.getQuantity() > 0)
