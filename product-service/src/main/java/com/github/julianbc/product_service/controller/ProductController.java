@@ -18,7 +18,7 @@ import java.util.List;
 @RequestMapping("/api/products")
 @RequiredArgsConstructor
 public class ProductController {
-    private ProductService service;
+    private final ProductService service;
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)

@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 @Slf4j
 @RequiredArgsConstructor
 public class ProductService {
-    private ProductRepository repository;
+    private final ProductRepository repository;
 
     public void createProduct(ProductRequest productRequest) {
         Product product = Product.builder()
