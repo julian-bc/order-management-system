@@ -1,5 +1,5 @@
 # Order Management System
-Order Management System is a hand-ons project covers Spring Cloud foundations about microservice architecture, where I apply diverse technologies such as Docker, Keycloak, Kafka, RabbitMQ, JWT, Zipkin, Grafana, Prometheus and more.
+Order Management System is a hand-ons project covers Spring Cloud foundations about microservice architecture, where I apply diverse technologies such as Docker, Keycloak, JWT and more.
 
 ## Proposed Architecture
 <p align="center">
